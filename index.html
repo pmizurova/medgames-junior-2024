@@ -10,7 +10,7 @@
         text-align: center;
         background-color: #012f49; /* Adjusted to match the logo color */
         color: white;
-        background-image: url('background_design.png'); /* Path to your background image */
+        background-image: url('background_design_cleanup.png'); /* Path to your background image */
         background-size: cover; /* Cover the entire page */
         background-position: center center; /* Center the image */
         background-attachment: fixed; /* Fixed background */
@@ -41,25 +41,22 @@
         border: none;
         border-radius: 5px;
     }
-    @keyframes beat {
-        0% { transform: scale(1); }
-        25% { transform: scale(1.1); }
-        50% { transform: scale(1); }
-        75% { transform: scale(1.1); }
-        100% { transform: scale(1); }
+    @keyframes pump {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
     }
     .heart {
-        animation: beat 1s infinite;
+        animation: pump 2s infinite;
     }
 </style>
 </head>
 <body>
 
-<div class="container">
-    <img src="medgames_jun.PNG" alt="M+D Games Junior Logo" class="logo heart">
-    <div id="countdown" class="countdown"></div>
-    <a href="https://forms.gle/j5QkFozME7bvUZic8" class="register-btn">Register Now</a>
-</div>
+    <div class="container">
+        <img src="heart.png" alt="Beating Heart" class="heart logo">
+        <div id="countdown" class="countdown"></div>
+        <a href="https://forms.gle/j5QkFozME7bvUZic8" class="register-btn">Register Now</a>
+    </div>
 
 <script>
     // Set the date we're counting down to
